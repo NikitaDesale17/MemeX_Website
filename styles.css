@@ -1,0 +1,681 @@
+html
+      {
+          scroll-behavior: smooth;
+      }
+      *{
+          padding:0;
+          margin:0;
+          text-decoration:none;
+          list-style:none;
+      }
+      body{
+          font-family:poppins;
+          background-color:black;
+          
+      }
+/*-----------------------HOME-------------------------*/
+/*menubar starts*/
+.navbar-nav a{
+  font-size:18px;
+  color:white;
+  text-transform:uppercase;
+  font-weight:500;
+  margin-left:15px;
+  padding-top:20px;
+  padding-bottom:20px;
+  
+}
+
+.navbar-dark {
+ background-color:rgb(80,31,126);
+}
+.navbar-dark .navbar-brand{
+ color:white;
+ font-size:33px;
+ font-weight:700px;
+ padding-top:3px;
+ padding-left:15px;
+}
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover{
+ color:white;
+
+}
+.navbar-dark .navbar-nav .navbar-link{
+ color:white;
+}
+.w-100{
+ height:100vh;
+}
+
+
+/*responsive css*/
+@media screen and(max-width:768px) {
+ 
+ .navbar-nav li{
+    float:right;
+}
+}   
+/*menubar ends*/        
+
+      
+/*mininos image 1st div*/
+ .b1{     
+    background-image: url("./images/niki.jpg");
+    background-color: #fff;
+    position: relative;
+    padding-bottom:20px;
+    height:600px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    margin-top:0px;
+   }
+   
+   .color-overlay{
+    background:linear-gradient(to top left,black,black);
+    width:100%;
+    height:100%;
+    opacity:.4;
+    position:absolute;
+    margin-top:19px;
+    
+  }
+    .maintext{
+      position: absolute;
+      text-align:center;
+      top: 100px;
+      left:530px;
+      color:white;
+      font-size:70px;
+      font-family:"Segoe UI Emoji";
+   }
+   .def1 {
+      position: absolute;
+      top: 190px;
+      left:570px;
+      color:white;
+      font-size:30px;
+      font-family:"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbo";
+   }
+   .def2 {
+      position: absolute;
+      top: 230px;
+      left:550px;
+      color:white;
+      font-size:30px;
+      font-family:"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbo";
+   }
+   .def3{
+      position: absolute;
+      top:230px;
+      left:690px;
+      color:white;
+      font-size:30px;
+      font-family:"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbo";
+   }
+   .def4 {
+      position: absolute;
+      top:230px;
+      left:858px;
+      color:white;
+      font-size:30px;
+      font-family:"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbo";
+   }
+   
+   
+ /* what is meme,animation,emoji 2nd div*/
+ .c1{
+    height:calc(30vh);
+    margin-top:60px;
+    background-color:white;
+    margin-left:40px;
+    width:30%; 
+    background-color:rgb(231, 235, 243);
+    }
+  .c1:hover{
+   box-shadow:0px 0px 20px rgb(240, 211, 243); ;
+   transition:.4s;
+   }
+   .c1 span{
+     font-size:30px;
+     color:green;
+     padding-right:8px;  
+   }
+   .c1 h3{
+       text-align:center;
+       color:rgb(58, 5, 94);
+       padding-top:0px;
+
+   }
+   .c1 p{
+      text-align:center;
+      padding-top:10px;
+      font-size:18px;
+   }
+
+   
+
+
+    
+/*for copyright 6th div */
+        .cprt{
+            width:100%;
+            background-color:white;
+            height:60px;
+            margin-top:60px;
+          }
+          .cprt h4{
+            color:rgb(66,51,105);
+            text-align:center;
+            padding-top:20px;
+            font-size:15px;
+          }
+
+
+ /*for last space 7th div*/
+ .space{
+    width:100%;
+    background-color:white;
+    height:40px;
+    margin-top:80px;
+   }
+
+
+
+
+
+
+/* media query for whole website*/
+@media screen and (max-width: 600px)
+{
+   .mydesc{
+    font-size:20px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+
+
+}
+
+
+/*-----------------------MEMES-------------------------*/
+
+/*Index for every MEME page*/
+.index{
+  height:400px;
+  border:2px solid rgb(86, 13, 134);
+  margin-top:40px;
+  background-color:rgb(231, 235, 243);
+  
+}
+.index h2{
+  color:rgb(86, 13, 134);
+  text-align:center;
+  margin-top:5px;
+}
+.content{
+        
+        border:1px solid rgb(86, 13, 134);
+        color:rgb(86, 13, 134);
+        text-align:center;
+        text-decoration:none;
+        display:inline-block;
+        font-size:18px;
+        margin-top:30px;
+        margin-left:20px;
+        cursor: pointer;
+        height:30px;
+        width:35%;
+        border-radius:10px;
+}
+.bcontent{  
+        border:1px solid rgb(86, 13, 134);
+        color:rgb(86, 13, 134);
+        text-align:center;
+        text-decoration:none;
+        display:inline-block;
+        font-size:18px;
+        margin-top:30px;
+        margin-left:20px;
+        cursor: pointer;
+        height:30px;
+        width:50%;
+        border-radius:10px;
+}
+.index a:hover{
+  background-color:rgb(86, 13, 134);
+  color:white;
+  text-decoration:none;
+  transition:.4s;
+
+}
+
+/*Meme.php*/
+#trending{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#trending:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+/*tmkoc.php*/
+#tmkoc{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#tmkoc:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+/*akhf.php*/
+#ak{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#ak:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+#hf{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#hf:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+/*gd.php*/
+#golmal{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#golmal:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+#dhamal{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#dhamal:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+/*laughcry.php*/
+#cry{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#cry:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+#laugh{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#laugh:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+#bl{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#bl:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+/*rajpaly.php*/
+#ry{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#ry:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+/*namo.php*/
+#nm{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#nm:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+/*cricket.php*/
+#cricket{
+  margin-top:60px;
+  margin-left:10px;
+  border:1px solid rgb(86,13,134);
+}
+#cricket:hover{
+  box-shadow:0px 0px 20px rgb(86,13,134);
+  transition:.3s;
+}
+
+
+
+/*-----------------------ANIMATIONS-------------------------*/
+
+.index2{
+  height:400px;
+  margin-top:30px;
+  background-color:rgb(204, 230, 221);
+ }
+ .index2 h2{
+   color:green;
+   text-align:center;
+   margin-top:5px;
+   padding-top:30px;
+ }
+ .content2{
+         
+         border:1px solid green;
+         color:green;
+         text-align:center;
+         text-decoration:none;
+         display:inline-block;
+         font-size:20px;
+         margin-top:30px;
+         margin-left:20px;
+         cursor: pointer;
+         height:30px;
+         width:20%;
+         border-radius:10px;
+ }
+ .bcontent2{  
+         border:1px solid green;
+         color:green;
+         text-align:center;
+         text-decoration:none;
+         display:inline-block;
+         font-size:20px;
+         margin-top:30px;
+         margin-left:20px;
+         cursor: pointer;
+         height:30px;
+         width:40%;
+         border-radius:10px;
+ }
+ .index2 a:hover{
+   background-color:green;
+   color:white;
+   text-decoration:none;
+   transition:.4s;
+ }
+ #flower{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #flower:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #bird{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #bird:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #bike{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #bike:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #city{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #city:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #grass{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #grass:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #mtn{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #mtn:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #night{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #night:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #rain{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #rain:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #windmill{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #windmill:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #water{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #water:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #subscribe{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #subscribe:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ #mm{
+   margin-top:60px;
+   margin-left:10px;
+   border:1px solid rgb(86,13,134);
+ }
+ #mm:hover{
+   box-shadow:0px 0px 20px rgb(86,13,134);
+   transition:.3s;
+ }
+ 
+
+ /*-----------------------EMOJI-------------------------*/
+/*1st div*/
+.b2{     
+ background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url(./images/emoji.jpg);
+ background-size: cover;
+ background-position: center;
+ background-repeat:no-repeat;
+ height: 500px;
+ position: relative;
+
+ }
+.b2 p{
+  padding-top:200px;
+  font-size:30px;
+ }
+.t{
+  border:1px solid rgb(86,13,134);
+  margin-top:40px;
+  
+}
+.t:hover{
+box-shadow:0px 0px 20px rgb(86,13,134);
+transition:.3s;
+}
+thead,td{
+text-align:center;
+}
+td{
+font-size:20px;
+}
+td:hover{
+box-shadow:0px 0px 20px rgb(86,13,134);
+transition:.0s;
+} 
+
+/*index1*/
+.index1{
+height:450px;
+padding-top:140px;
+}
+
+
+.content1{
+ border:1px solid white;
+ color:rgb(86, 13, 134) ;
+ text-align:center;
+ text-decoration:none;
+ display:inline-block;
+ font-size:18px;
+ margin-top:30px;
+ margin-left:20px;
+ cursor: pointer;
+ height:30px;
+ width:32%;
+ border-radius:10px;
+ background-color:rgb(218, 207, 228);
+}
+
+.index1 a:hover{
+box-shadow:0px 0px 20px rgb(80,31,126);
+transition:.4s;
+text-decoration:none;
+}
+
+
+
+
+/*-----------------------SIGNIN-------------------------*/
+.log{
+  height:430px;
+  padding-top:30px;
+  border:1px solid black;
+  margin-top:100px;
+  border-radius:3px;
+}
+.log h2{
+  text-align:center;
+  
+}
+
+
+
+
+/*-----------------------SIGNUP-------------------------*/
+.log1{
+  height:500px;
+  padding-top:30px;
+  border:1px solid black;
+  margin-top:100px;
+  border-radius:3px;
+}
+.log1 h2{
+  text-align:center;
+  
+}
+
+
+
+
+
+/*-----------------------FEEDBACK-------------------------*/
+/*alert text*/
+.alert{
+  width:80%;
+  height:50px;
+  margin-top:30px;
+  font-size:18px;
+  margin-left:15px;
+  text-align:center;
+  
+}
+/*feedback*/
+.feedh{
+    height:450px;
+    background-color:rgb(86, 13, 134);
+    margin-top:60px;
+}
+.feedh h1{
+  font-size:50px;
+  padding-left:150px;
+  color:white;
+  padding-top:80px;
+  line-height:70px;
+}
+.feed{
+    height:450px;
+    background-color:rgb(86, 13, 134);
+    margin-top:60px;
+    padding-top:40px;
+    color:white;
+    font-size:15px; 
+}
+.btn:hover{
+    box-shadow:0px 0px 20px white;
+    transition:.2s;
+}
+
+
+
+
